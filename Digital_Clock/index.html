@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="containter">
+        <div class="box">
+            <span class="date"></span>
+        </div>
+    </div>
+
+    <script>
+        const box = document.querySelector('.box');
+        const months = [
+            "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+        ];
+        const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+        function clock() {
+            let date = new Date();
+
+            let hour = date.getHours();
+            let minute = date.getMinutes();
+            let second = date.getSeconds();
+
+            let month = date.getMonth();
+            let day = date.getDate();
+            let year = date.getFullYear();
+            let week = date.getDay();
+
+
+            if (hour > 12) {
+                hour -= 12
+            };
+            if (hour < 10) {
+                hour = "0" + hour
+            };
+            if (minute < 10) {
+                hour = "0" + minute
+            };
+            if (second < 10) {
+                hour = "0" + second
+            };
+
+            let shwoDate = `<span> <em>${days[week]},${day},${months[month]},${year}</em></span>`;
+
+            box.innerHTML = `(-- ${hour}: ${minute}: ${second} --) <br> <br> ${shwoDate}`;
+        };
+
+        //clock();
+
+        setInterval(clock, 1000);
+    </script>
+
+</body>
+
+</html>
