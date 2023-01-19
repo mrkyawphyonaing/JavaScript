@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <h1>နာရီကို သေချာကြည့်ပြီးမှ ကဒ်ဖြတ်ပါ</h1>
     <div class="containter">
         <div class="box">
             <span class="date"></span>
@@ -21,7 +22,7 @@
         const months = [
             "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
         ];
-        const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", ];
 
         function clock() {
             let date = new Date();
@@ -52,6 +53,8 @@
             let shwoDate = `<span> <em>${days[week]},${day},${months[month]},${year}</em></span>`;
 
             box.innerHTML = `(-- ${hour}: ${minute}: ${second} --) <br> <br> ${shwoDate}`;
+
+            //console.log(week);
         };
 
         //clock();

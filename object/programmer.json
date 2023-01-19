@@ -1,0 +1,35 @@
+[{
+        "name": "John",
+        "age": 21,
+        "language": ["Javascript"],
+        "isActive": true,
+        "jobTitle": {
+            "name": "Javascript Developer",
+            "salary": 1000000
+
+        }
+    },
+    {
+        "name": "Mike",
+        "age": 22,
+        "language": ["C++"],
+        "isActive": true,
+        "jobTitle": {
+            "name": "Javascript Developer",
+            "salary": 1000000
+
+        }
+    },
+    {
+        "name": "Marry",
+        "age": 20,
+        "language": ["PHP"],
+        "isActive": true,
+        "jobTitle": {
+            "name": "Javascript Developer",
+            "salary": 1000000
+
+        }
+    }
+
+]
