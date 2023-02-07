@@ -1,4 +1,7 @@
+//Catch dispiay
 const display = document.getElementById('display');
+
+// Change Node list to Array
 const buttons = Array.from(document.querySelectorAll('.button'));
 console.log(buttons);
 console.log(document.querySelectorAll('.button'));
