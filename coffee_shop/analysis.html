@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>Coffee Shop Analytics & Reporting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #ddd;
+        }
+        
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Coffee Shop Analytics & Reporting</h2>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Total Sales</th>
+            <th>Average Price</th>
+            <th>Total Revenue</th>
+        </tr>
+        <tr>
+            <td>Coffee</td>
+            <td>2500</td>
+            <td>$2.50</td>
+            <td>$6,250</td>
+        </tr>
+        <tr>
+            <td>Tea</td>
+            <td>1500</td>
+            <td>$2.00</td>
+            <td>$3,000</td>
+        </tr>
+        <tr>
+            <td>Muffins</td>
+            <td>1000</td>
+            <td>$3.00</td>
+            <td>$3,000</td>
+        </tr>
+    </table>
+    <script>
+        // Code for reporting and analytics
+        let coffeeSales = 2500;
+        let coffeePrice = 2.50;
+        let coffeeRevenue = coffeeSales * coffeePrice;
+
+        let teaSales = 1500;
+        let teaPrice = 2.00;
+        let teaRevenue = teaSales * teaPrice;
+
+        let muffinsSales = 1000;
+        let muffinsPrice = 3.00;
+        let muffinsRevenue = muffinsSales * muffinsPrice;
+
+        let totalRevenue = coffeeRevenue + teaRevenue + muffinsRevenue;
+
+        console.log(`Total revenue from all sales: $${totalRevenue}`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Inventory Management for Coffee Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inventory Management for Coffee Shop</h1>
+    <p>This is a simple inventory management system for a coffee shop.</p>
+    <div>
+        <h2>Coffee Inventory</h2>
+        <table>
+            <tr>
+                <th>Type of Coffee</th>
+                <th>Amount of Coffee</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Espresso</td>
+                <td>100 lbs</td>
+                <td><input type="button" value="Edit" onclick="editCoffee('espresso')" />
+                    <input type="button" value="Delete" onclick="deleteCoffee('espresso')" /></td>
+            </tr>
+            <tr>
+                <td>Cappuccino</td>
+                <td>50 lbs</td>
+                <td><input type="button" value="Edit" onclick="editCoffee('cappuccino')" />
+                    <input type="button" value="Delete" onclick="deleteCoffee('cappuccino')" /></td>
+            </tr>
+            <tr>
+                <td>Latte</td>
+                <td>75 lbs</td>
+                <td><input type="button" value="Edit" onclick="editCoffee('latte')" />
+                    <input type="button" value="Delete" onclick="deleteCoffee('latte')" /></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Add Coffee</h2>
+        <form action="addCoffee.php" method="post">
+            <label>Type of Coffee:</label>
+            <input type="text" name="coffeeType" />
+            <label>Amount of Coffee:</label>
+            <input type="text" name="coffeeAmount" />
+            <input type="submit" value="Add" />
+        </form>
+    </div>
+    <script>
+        function editCoffee(coffeeType) {
+            // code to edit coffee goes here
+        }
+
+        function deleteCoffee(coffeeType) {
+            // code to delete coffee goes here
+        }
+    </script>
+</body>
+
+</html>

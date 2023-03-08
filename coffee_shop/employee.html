@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Employee Management for Coffee Shop</title>
+    <style>
+        #employeeList {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        #employeeList td,
+        #employeeList th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        #employeeList tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #employeeList tr:hover {
+            background-color: #ddd;
+        }
+        
+        #employeeList th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Employee Management for Coffee Shop</h1>
+    <table id="employeeList">
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Start Date</th>
+            <th>Salary</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>Barista</td>
+            <td>1/1/2020</td>
+            <td>$14.00</td>
+            <td>
+                <input type="button" value="Edit" onclick="editEmployee()" />
+                <input type="button" value="Delete" onclick="deleteEmployee()" />
+            </td>
+        </tr>
+        <tr>
+            <td>Jane Doe</td>
+            <td>Manager</td>
+            <td>3/1/2020</td>
+            <td>$18.00</td>
+            <td>
+                <input type="button" value="Edit" onclick="editEmployee()" />
+                <input type="button" value="Delete" onclick="deleteEmployee()" />
+            </td>
+        </tr>
+    </table>
+    <input type="button" value="Add Employee" onclick="addEmployee()" />
+    <script>
+        function editEmployee() {
+            alert('Edit Employee');
+        }
+
+        function deleteEmployee() {
+            alert('Delete Employee');
+        }
+
+        function addEmployee() {
+            alert('Add Employee');
+        }
+    </script>
+</body>
+
+</html>

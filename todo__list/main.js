@@ -2,7 +2,7 @@ const input = document.querySelector('.form');
 const tasks = document.querySelector('.tasks');
 
 input.addEventListener('submit', addTasks);
-
+let value = localStorage.getItem("value");
 //ADD TASKS
 function addTasks(e) {
     e.preventDefault();

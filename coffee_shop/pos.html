@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coffee Shop POS System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Coffee Shop POS System</h1>
+
+    <!-- user input -->
+    <form>
+        <div>
+            <label for="item-1">Coffee:</label>
+            <input type="number" name="item-1" id="item-1" value="0">
+        </div>
+        <div>
+            <label for="item-2">Cake:</label>
+            <input type="number" name="item-2" id="item-2" value="0">
+        </div>
+        <div>
+            <label for="item-3">Juse:</label>
+            <input type="number" name="item-3" id="item-3" value="0">
+        </div>
+        <div>
+            <label for="item-4">Soda:</label>
+            <input type="number" name="item-4" id="item-4" value="0">
+        </div>
+        <input type="submit" value="Calculate Total">
+    </form>
+
+    <!-- output -->
+    <div class="output">
+        <h2>Total: <span id="total"></span></h2>
+    </div>
+
+    <script>
+        // get all the input elements
+        const item1 = document.getElementById('item-1');
+        const item2 = document.getElementById('item-2');
+        const item3 = document.getElementById('item-3');
+        const item4 = document.getElementById('item-4');
+
+        // prices
+        const price1 = 100;
+        const price2 = 200;
+        const price3 = 300;
+        const price4 = 400;
+
+        // total output
+        const total = document.getElementById('total');
+
+        // calculate total
+        function calculateTotal() {
+            const item1Value = item1.value * price1;
+            const item2Value = item2.value * price2;
+            const item3Value = item3.value * price3;
+            const item4Value = item4.value * price4;
+
+            total.innerText = (item1Value + item2Value + item3Value + item4Value).toFixed(2);
+        }
+
+        // add event listeners
+        item1.addEventListener('input', calculateTotal);
+        item2.addEventListener('input', calculateTotal);
+        item3.addEventListener('input', calculateTotal);
+        item4.addEventListener('input', calculateTotal);
+    </script>
+</body>
+
+</html>
